@@ -1,0 +1,44 @@
+.events-page {
+  padding: 30px 0 75px;
+
+  h1 {
+    @include montserrat-semibold;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .events-list {
+    &__item {
+      padding: 45px 0;
+      border-bottom: 1px solid #878787;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 20px;
+          width: 200px;
+          height: 115px;
+        }
+
+        h4 {
+          @include montserrat-semibold;
+          color: #000000;
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 7px;
+        }
+
+        p {
+          font-size: 13px;
+          line-height: 22px;
+          color: $main-blue;
+        }
+
+      }
+    }
+  }
+
+
+}
