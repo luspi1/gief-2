@@ -29,6 +29,10 @@
   .news-page__inner {
     display: flex;
     align-items: flex-start;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .news-list {
@@ -47,10 +51,17 @@
         display: flex;
         align-items: center;
 
+        @media (max-width: 550px) {
+          flex-direction: column;
+        }
+
         img {
           margin-right: 20px;
           width: 200px;
           height: 115px;
+          @media (max-width: 550px) {
+            margin-bottom: 20px;
+          }
         }
 
         h4 {
@@ -59,12 +70,18 @@
           font-size: 18px;
           line-height: 22px;
           margin-bottom: 7px;
+          @media (max-width: 550px) {
+            text-align: center;
+          }
         }
 
         p {
           font-size: 13px;
           line-height: 22px;
           color: $main-blue;
+          @media (max-width: 550px) {
+            text-align: center;
+          }
         }
       }
     }
@@ -75,6 +92,13 @@
     min-width: 265px;
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      order: -1;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
 
     a {
       margin-right: 10px;

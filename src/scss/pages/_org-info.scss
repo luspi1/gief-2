@@ -16,6 +16,11 @@
     .container {
       display: flex;
       align-items: flex-start;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
     }
   }
 
@@ -43,6 +48,7 @@
       p {
         display: inline;
       }
+
       h5 {
         display: inline;
       }
@@ -51,9 +57,11 @@
 
   &__links-list {
     margin-bottom: 30px;
+
     li {
       margin-bottom: 10px;
     }
+
     a {
       color: $main-blue;
     }
@@ -65,16 +73,35 @@
     min-width: 300px;
     padding: 23px 20px 60px 20px;
 
-    ul {
+    @media (max-width: 768px) {
+      order: -1;
+      margin-bottom: 30px;
+      padding: 15px 15px 20px 15px;
       width: 100%;
     }
 
+    ul {
+      width: 100%;
+
+      @media (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    }
+
     li {
+
+      @media (max-width: 768px) {
+        margin-right: 10px;
+      }
+
       a {
         font-size: 14px;
         line-height: 17px;
         color: #000000;
       }
+
       &._active {
         a {
           font-weight: 500;

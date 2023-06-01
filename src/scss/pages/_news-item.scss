@@ -49,6 +49,7 @@
       text-align: left;
       width: 100px;
       position: relative;
+      bottom: 0;
     }
 
   }
@@ -57,16 +58,29 @@
     margin-bottom: 65px;
     display: flex;
     align-items: flex-start;
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
   }
 
   &__content-socials {
     width: 35px;
     min-width: 35px;
     margin-right: 40px;
+    @media (max-width: 550px) {
+      order: 1;
+      width: 100%;
+      display: flex;
+      margin-right: 0;
+    }
 
     a {
       display: block;
       margin-bottom: 30px;
+      @media (max-width: 550px) {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
     }
   }
 

@@ -1,6 +1,10 @@
 .remote-education-page {
   padding: 30px 0 230px;
 
+  @media  (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+
   h1 {
     @include montserrat-semibold;
     font-size: 30px;
