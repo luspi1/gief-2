@@ -25,4 +25,11 @@ $main-bg: #EFEFEF;
   font-weight: 700;
 }
 
-
+@mixin roboto-light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+@mixin roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}

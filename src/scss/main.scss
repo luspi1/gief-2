@@ -11,9 +11,9 @@
 
 //Модалки
 
-
-
 //Компоненты
+@import "./components/header";
+@import "./components/footer";
 @import "./components/edit-btn";
 @import "./components/customSelect";
 @import "./components/button-delete";
@@ -22,10 +22,10 @@
 @import "./components/main-accordion";
 @import "./components/pagination";
 
-
 //Медиа запросы
 
-
+@import "./media/media-header";
+@import "./media/media-footer";
 
 
 
